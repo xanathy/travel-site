@@ -1,0 +1,36 @@
+
+Entrando a la consola de git
+	git config --global user.name "MiNombre"
+	git config --global user.email "miemail@sitio.com"
+
+Comandos en la consola GIT:
+	
+	* pwd (Print Working Directory) - Indica la ruta del directorio en 										la cual estamos trabajando
+
+	* cd /Users/misSitios (change directory) - Cambiamos de directorio al de la ruta inidicada
+
+	* mkdir miFolder (make directory) - Crea un directorio desde la consola
+
+	* git init (inicializa) - Nos posicionamos en el directorio deseado y al teclear git init, le decimos a GIT que ese directorio lo va a tomar como repositorio.
+
+	* touch "nuevoArchivo.html" - creamos un nuevo archivo desde la consola
+
+	* git status - muestra el estatus de los archivos que tenemos en el directorio actual (rojo = modificado)
+
+	* git add nuevoArchivo.html - agregamos el archivo a la zona "Stage" (es en una zona previa a realizar commit, para asegurarnos que los archivos que enviaremos a commit son los correctos)
+
+	* git commit -m 'Mi primer commit' - Se realiza un commit a todos los archivos que teníamos en "Stage"
+
+	* git checkout -- . (todo completo hasta el punto) Restaura todos los archivos hasta el útimo commit
+
+	* git push - sube el repositorio a gitHub o servicio similar
+
+	* git pull - obtiene el repositorio de github o servicio similar
+
+	* git remote -v git muestra la ruta a donde enviará el push. Si hacemos un clon, git querrá enviarlo al directorio original
+
+		* para cambiar la ruta: ir a github y copiar la ruta de nuestro directorio y luego correr el sig comando:
+
+	* git remote set-url origin https://github/miruta/miDirectorio.git - Establece la ruta del directorio en GitHub sobre el cual haremos los cambios
+
+	* git push origin master - Sube el repositorio al origin (ruta que establecimos en git remote set-url) de github
